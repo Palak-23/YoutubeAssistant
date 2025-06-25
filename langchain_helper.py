@@ -9,7 +9,6 @@ from langchain.memory import ConversationBufferMemory
 import streamlit as st
 import os
 
-# Load API key from Streamlit secrets and set env variable
 os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
 
 embeddings = OpenAIEmbeddings()
